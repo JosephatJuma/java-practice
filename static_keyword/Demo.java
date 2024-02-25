@@ -3,14 +3,22 @@ class Mobile {
     String brand;
     int price;
     static String name;
+
+    public Mobile() {
+        System.out.println("constructor");
+    }
+
     static {
         name = "Smart Phone";
+        System.out.println("static block");
     }
 
     /*
      * the static block is executed only once and first
      * 
      * each object of the class is has the same value of the static instance
+     * 
+     * 
      * variable
      */
 
