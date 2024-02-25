@@ -21,9 +21,15 @@ class Mobile {
      * 
      * variable
      */
+    // static methods
 
     public void display() {
         System.out.println(brand + " " + price + " " + name);
+    }
+
+    public static void display1(Mobile obj) {
+        System.out.println(obj.brand + " " + obj.price + " " + name);
+
     }
 }
 
@@ -38,6 +44,16 @@ public class Demo {
         m2.price = 2000;
         m1.display();
         m2.display();
+
+        // static memthods can by accessed directly using the class
+        Mobile.display1(m1);
+
+        /*
+         * The main method is the entry point of the program, therefore it is usually
+         * a static method
+         * 
+         * that means we do not need to create an object of the class
+         */
 
     }
 
