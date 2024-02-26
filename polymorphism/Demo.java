@@ -17,6 +17,12 @@ class C extends A {
     }
 }
 
+class D extends B {
+    public void show() {
+        System.out.println("in D show");
+    }
+}
+
 public class Demo {
     public static void main(String[] args) {
 
@@ -29,9 +35,14 @@ public class Demo {
         obj = new C();
         obj.show();
 
+        obj = new D();
+        obj.show();
+
         // Dynamic method dispatch
 
         // the above is run time polymorphism
+
+        // it doesnt matter the type of the object at runtime
 
     }
 }
