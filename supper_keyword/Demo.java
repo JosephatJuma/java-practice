@@ -11,7 +11,7 @@ class A {
     }
 
     public A(int n) {
-        super();
+        this();
         System.out.println("In A Int");
     }
 }
@@ -23,7 +23,9 @@ class B extends A {
     }
 
     public B(int n) {
-        super(n);
+
+        this();
+        // this method is used to call the default constructor of the current class
         System.out.println("In B Int");
     }
 }
