@@ -25,5 +25,20 @@ public class Demo {
         /*
          * To access the inner class we need to create an object of the outer class
          */
+
+        // anonymous inner class
+        A obj2 = new A() {
+            public void show() {
+                System.out.println("In Anonymous A Show ");
+            }
+        };
+        obj2.show();
+
+        A.B obj3 = new A().new B() {
+            public void show() {
+                System.out.println("In Anonymous B Show ");
+            }
+        };
+        obj3.show();
     }
 }
