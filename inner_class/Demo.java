@@ -15,6 +15,12 @@ class A {
 
 }
 
+abstract class C {
+    abstract public void show();
+
+    abstract public void config();
+}
+
 public class Demo {
     public static void main(String[] args) {
         A obj = new A();
@@ -40,5 +46,16 @@ public class Demo {
             }
         };
         obj3.show();
+
+        C obj4 = new C() {
+            public void show() {
+                System.out.println("In Anonymous C Show ");
+            }
+
+            public void config() {
+                System.out.println("In Anonymous C Config ");
+            }
+        };
+        obj4.show();
     }
 }
