@@ -3,19 +3,21 @@ enum Status {
 }
 
 enum Laptop {
-    Macbook(5000, "Apple"), ThinkPad(1000, "Lenovo"), Notebook(1400, "HP"), XPS(2000, "IBM"), Latitude(2500, "Dell");
+    Macbook(5000, "Apple"), ThinkPad(1000, "Lenovo"), Notebook(1400, "HP"), XPS(2000, "IBM"), Latitude;
 
     private int price;
     private String brand;
 
-    // private Laptop() {
-    // price = 1000;
-    // brand = "Lenovo";
-    // }
+    private Laptop() {
+        brand = "Dell";
+        price = 1000;
+
+    }
 
     private Laptop(int price, String brand) {
-        this.price = price;
         this.brand = brand;
+        this.price = price;
+
     }
 
     public int getPrice() {
