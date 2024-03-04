@@ -3,7 +3,7 @@
  * 
  * - Works only with functional interface
  * a functional interface has only one abstract method
- * other tapes of interfaces are
+ * other types of interfaces are
  * -Normal interface, -Interface with multiple abstract methods
  * -Marker interface, has no single abstract method
  * 
