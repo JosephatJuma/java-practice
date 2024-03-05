@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Demo {
     public static void main(String[] args) {
-        Collection<Integer> nums = new ArrayList<Integer>();
+        List<Integer> nums = new ArrayList<Integer>();
         nums.add(1);
         nums.add(10);
         nums.add(100);
@@ -11,5 +11,10 @@ public class Demo {
             System.out.println(n);
 
         }
+        // while (nums.size() > 0) {
+        // System.out.println(nums.get(0));
+        // nums.remove(0);
+        // }
+
     }
 }
