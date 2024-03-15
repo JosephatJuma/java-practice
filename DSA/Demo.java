@@ -27,12 +27,12 @@ public class Demo {
         int marks[] = new int[100];
 
         for (int ind = 0; ind < marks.length; ind++) {
-            marks[ind] = (int) (Math.random() * 100);
+            marks[ind] = (int) (Math.random() * 91) + 10;
         }
         bubbleSort(marks);
         for (int mark : marks) {
 
-            System.out.print(mark + " ");
+            System.out.print(mark + ", ");
 
         }
         System.out.println();
@@ -123,7 +123,7 @@ public class Demo {
 
     // }
 
-    public static void bubbleSort(int[] marks) {
+    public static void bubbleSort(int marks[]) {
         int size = marks.length;
         int temp = 0;
         for (int i = 0; i < size; i++) {
@@ -138,5 +138,4 @@ public class Demo {
 
         }
     }
-
 }
