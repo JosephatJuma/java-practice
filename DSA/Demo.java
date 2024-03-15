@@ -4,13 +4,10 @@ public class Demo {
         int index = 0;
         for (int i = 1; i < nums.length * 2; i += 2) {
             nums[index] = i;
-            System.out.print(i + ", ");
             index++;
         }
 
-        System.out.println();
-
-        int target = 99;
+        int target = 30;
         int result = linearSearch(nums, target);
         if (result == -1)
             System.out.println("Element not found");
@@ -42,10 +39,12 @@ public class Demo {
         int steps = 0;
         for (int i = 0; i < nums.length; i++) {
             steps = i + 1;
+
             System.out.println("Step taken for linear: " + steps);
             if (target == nums[i]) {
                 return i;
             }
+
         }
         return -1;
     }
