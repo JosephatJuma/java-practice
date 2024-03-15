@@ -1,6 +1,6 @@
 public class BubbleSort {
     public static void main(String[] args) {
-        int nums[] = { 6, 5, 2, 8, 9, 4 };
+        int nums[] = { 3, 8, 4, 2, 9, 1, 10 };
         int size = nums.length;
         int temp = 0;
 
@@ -17,6 +17,12 @@ public class BubbleSort {
                     temp = nums[j];
                     nums[j] = nums[j + 1];
                     nums[j + 1] = temp;
+                }
+                System.out.println(" Temp: " + temp);
+                for (int num : nums) {
+
+                    System.out.print(num + " ");
+
                 }
             }
         }

@@ -21,19 +21,22 @@ public class Demo {
         else
             System.out.println("Element found at index: " + result);
 
+        // bubble sort
+        System.out.println();
+
+        int marks[] = new int[100];
+
+        for (int ind = 0; ind < marks.length; ind++) {
+            marks[ind] = (int) (Math.random() * 100);
+        }
+        bubbleSort(marks);
+        for (int mark : marks) {
+
+            System.out.print(mark + " ");
+
+        }
+        System.out.println();
     }
-
-    // public static int linearSearch(int nums[], int target) {
-    // int steps = 0;
-    // for (int i = 0; i < nums.length; i++) {
-    // steps = i + 1;
-    // System.out.println("Step taken for linear: " + steps);
-    // if (nums[i] == target)
-    // return i;
-
-    // }
-    // return -1;
-    // }
 
     public static int linearSearch(int nums[], int target) {
         int steps = 0;
@@ -103,5 +106,37 @@ public class Demo {
     // }
     // return -1;// the elecment is not in the array
     // }
+
+    // public static void bubbleSort(int[] marks) {
+    // int size = marks.length;
+    // int temp = 0;
+    // for (int i = 0; i < size; i++) {
+    // for (int j = 0; j < size - i - 1; j++) {
+    // if (marks[j] > marks[j + 1]) {
+
+    // temp = marks[j];
+    // marks[j] = marks[j + 1];
+    // marks[j + 1] = temp;
+    // }
+    // }
+    // }
+
+    // }
+
+    public static void bubbleSort(int[] marks) {
+        int size = marks.length;
+        int temp = 0;
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size - i - 1; j++) {
+                if (marks[j] > marks[j + 1]) {
+                    temp = marks[j];
+                    marks[j] = marks[j + 1];
+                    marks[j + 1] = temp;
+                }
+
+            }
+
+        }
+    }
 
 }
